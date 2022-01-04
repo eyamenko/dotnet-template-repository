@@ -44,7 +44,7 @@ indent_size = 2
 indent_size = 2
 
 # Markdown Files
-[*.md]
+[*.{md,mdx}]
 trim_trailing_whitespace = false
 
 # Web Files
@@ -427,12 +427,12 @@ dotnet_diagnostic.SA1633.severity = none
 ##########################################
 
 [*.cs]
-# CA1014: Mark assemblies with CLSCompliant
+# CA1014: Mark assemblies with CLSCompliant.
 # Justification: Don't support other CLR languages
 # https://docs.microsoft.com/en-us/visualstudio/code-quality/ca1014
 dotnet_diagnostic.CA1014.severity = none
 
-# CA1062: Validate arguments of public methods
+# CA1062: Validate arguments of public methods.
 # Justification: Nullable reference types turned on
 # https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062
 dotnet_diagnostic.CA1062.severity = none
